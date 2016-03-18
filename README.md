@@ -17,6 +17,7 @@ Go to your account and select your credentials. Click the **Continue to security
 
 ### Step 5
 Expand the **Access Keys (Access Key ID and Secret Access Key)** menu and create a new access key. Copy both credentials and store them in a config.env file or export on comand line, use the same keys as below, however, replace values with your credentials.  *note: add .env files to gitignore*.
+
  ```* export AWS_ACCESS_KEY_ID='AKID' ```
  
  ``` * export AWS_SECRET_ACCESS_KEY='SECRET'```
