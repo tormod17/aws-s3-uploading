@@ -1,0 +1,22 @@
+{
+  "name": "uploadDocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.44",
+    "connect-multiparty": "^2.0.0",
+    "env2": "^2.0.6",
+    "fs": "0.0.2",
+    "hapi": "^13.2.1",
+    "inert": "^3.2.0",
+    "s3fs": "git+https://github.com/RiptideCloud/s3fs.git"
+  }
+}
