@@ -12,21 +12,21 @@ Then select S3 storage
 Click the create a bucket choose a name and select the region , the nearest to UK being Ireland. 
 
 ### Step 4
-Go to your account and select your credentials. Click the **Continue to security credential** when the pop-up menu appears. 
+Go to your account and select your credentials. Click the **Continue to security credentials** when the pop-up menu appears. 
 ![image](https://cloud.githubusercontent.com/assets/11330267/13876032/52415274-ecf9-11e5-9346-ba775007d854.png)
 
 ### Step 5
-Expand the **Access Keys (Access Key ID and Secret Access Key)** menu and create a new access key.Copy both credentials and store them in a config.env file or export on comand line, use the same keys as below however replace values with your credentials.  
+Expand the **Access Keys (Access Key ID and Secret Access Key)** menu and create a new access key. Copy both credentials and store them in a config.env file or export on comand line, use the same keys as below, however, replace values with your credentials.  *note: add .env files to gitignore*.
  ```* export AWS_ACCESS_KEY_ID='AKID' ```
  
  ``` * export AWS_SECRET_ACCESS_KEY='SECRET'```
 ### Step 6
-Add your bucket to your environment variable as well. This is the name you used to create the bucket (string), load your environment variable using ``npm module env2 `` like so 
+Add your bucket to your environment variables as well. This is the name you used to create the bucket (string), load your environment variable using ``npm module env2 `` like so:
 
 ``` require('env2')('./config.env'); ```
 
 ### Step 7
-Install the ```npm module aws-sdk``` require it in to your server and configure your S3 object it like so : 
+Install the ```npm module aws-sdk``` require it in to your server and configure your S3 object it like so: 
 
 ``` var AWS = require('aws-sdk'); ```
 
@@ -38,7 +38,7 @@ Now you have conneccted your node server with the S3 object and can utilise the 
 ## How to run this example. 
  Once you have environment variables loaded clone and ```npm start ```
  
- In my example I upload using multiparty -form data save locally and then upload to the cloud after this I delete the locally stored version. I would prefer to upload directly to the cloud but haven't worked out how to do this. 
+ In my example I upload using multiparty-form data save locally and then upload to the cloud, after this I delete the locally stored version. I would prefer to upload directly to the cloud but haven't worked out how to do this. 
  
 ### Further Reading
  
