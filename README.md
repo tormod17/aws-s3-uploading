@@ -45,6 +45,7 @@ Now you have conneccted your node server with the S3 object and can utilise the 
  
  - Another npm module which allows manipulation of the file system in the cloud is ``s3fs``
  - I will now look at (uploadcare)[https://uploadcare.com/] as this provides integration with other services and creates cdn links for your files. 
+ - Send your file from the frontend by (signing the request)[https://devcenter.heroku.com/articles/s3-upload-node]
  
  
 
